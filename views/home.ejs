@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>temperature</title>
+</head>
+
+<body>
+
+
+  <form action="result" method="post">
+    <label for="Units">Units:</label>
+    <input id="Units" type="text" name="units" placeholder="Units">
+
+    <label for="Lat">Lat: </label>
+    <input id="Lat" type="text" name="lat" value="<%=lat %>" placeholder="Lat">
+
+    <label for="Lon">Lon: </label>
+    <input id="Lon" type="text" name="lon" value ="<%=lon %>" placeholder="Lon">
+
+
+    <input type="submit" value="submit">
+  </form>
+
+<div class=" button-box">
+  <p>Don't you know about the lat and lon of your city?</p>
+  <p>Click here to get it</p>
+  <button type="button" name="button">
+    <a href="http://localhost:3000/cityData">Click me!</a>
+  </button>
+</div>
+
+<div class="coordinates">
+  <h3><%=cityName %></h3>
+  <h3><%=lat %></h3>
+  <h3><%=lon %></h3>
+</div>
+
+</body>
+
+</html>
